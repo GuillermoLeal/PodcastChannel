@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Podcast Chanel</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="icon" href="./assets/logo.svg" />
+	</head>
+	<body>
+		<header class="navbar d-flex justify-between align-center">
+			<img class="logo" src="./assets/logo.svg" alt="logo..." />
+			<nav>
+				<input class="d-none" type="checkbox" id="menu-icon" />
+				<label id="icon-bars" for="menu-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+				<ul id="menu">
+					<li><a href="#episodios">EPISODIOS</a></li>
+					<li><a href="#nosotros">NOSOTROS</a></li>
+					<li><a href="#entrevistas">ENTREVISTAS</a></li>
+					<li><a href="#topicos">TÓPICOS</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="section">
+				<header class="section-header">
+					<h1 class="main-title">
+						Hello
+						<span class="line-through">world</span>
+						<br />
+						pale blue dot<span class="color-blue">.</span>
+					</h1>
+				</header>
+				<div class="section-body">
+					<p class="p-medium">
+						El portal de podcasts que explora el mundo de la programación<span class="text-visible">&nbsp;y la tecnología</span>. Nuevos episodios, todos los jueves cada 15 días.
+					</p>
+					<a class="button">CONOCÉ MÁS</a>
+				</div>
+			</section>
+			<section id="episodios" class="section section-shape shape-tb">
+				<header class="section-header">
+					<h2 class="section-title">Episodios</h2>
+				</header>
+				<div class="section-body spotify">
+					<iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100" height="232" allow="encrypted-media"></iframe>
+					<iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100" height="232" allow="encrypted-media"></iframe>
+					<iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100" height="232" allow="encrypted-media"></iframe>
+					<iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100" height="232" allow="encrypted-media"></iframe>
+				</div>
+			</section>
+			<section id="nosotros" class="section section-flex">
+				<header class="section-header">
+					<img class="mb" src="./assets/img/phone.png" alt="phone..." />
+				</header>
+				<div class="section-body">
+					<h2 class="section-title mb">De dónde venimos</h2>
+					<p>
+						Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br /><br />
+						Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from
+						ourselves.
+					</p>
+				</div>
+			</section>
+			<section id="entrevistas" class="section">
+				<header class="section-header">
+					<h2 class="section-title">Invitadas/os estelares</h2>
+				</header>
+				<div class="grid-gallery">
+					<img src="./assets/img/gallery1.png" alt="gallery1" />
+					<img src="./assets/img/gallery2.png" alt="gallery2" />
+					<img src="./assets/img/gallery3.png" alt="gallery3" />
+					<img src="./assets/img/gallery4.png" alt="gallery4" />
+					<img src="./assets/img/gallery5.png" alt="gallery5" />
+					<img src="./assets/img/gallery6.png" alt="gallery6" />
+				</div>
+			</section>
+			<section id="topicos" class="section">
+				<header class="section-header">
+					<h2 class="section-title">Algunos de nuestros temas</h2>
+				</header>
+				<div class="section-body container-card-icons">
+					<div class="card-icon d-flex justify-center align-center flex-column">
+						<img src="./assets/icons/icon1.svg" alt="icon1..." />
+						<p class="text-center">Trabajo remoto</p>
+					</div>
+					<div class="card-icon d-flex justify-center align-center flex-column">
+						<img src="./assets/icons/icon2.svg" alt="icon2..." />
+						<p class="text-center">Repensando la programación</p>
+					</div>
+					<div class="card-icon d-flex justify-center align-center flex-column">
+						<img src="./assets/icons/icon3.svg" alt="icon3..." />
+						<p class="text-center">Bases del código</p>
+					</div>
+					<div class="card-icon d-flex justify-center align-center flex-column">
+						<img src="./assets/icons/icon4.svg" alt="icon4..." />
+						<p class="text-center">Seguridad informática</p>
+					</div>
+				</div>
+			</section>
+			<section class="section section-shape shape-t">
+				<header class="section-header">
+					<h2 class="section-title text-center">¿Querés las últimas novedades?</h2>
+				</header>
+				<div class="section-body d-flex justify-center align-center">
+					<a class="button">ESCUCHÁ LOS EPISODIOS</a>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>© 2019— Hello blue pale dot</p>
+			<div class="social d-flex justify-between align-center">
+				<a href="https://www.spotify.com/co/" target="_blank"><i class="fab fa-spotify"></i></a>
+				<a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram" target="_blank"></i></a>
+				<a href="https://twitter.com/?lang=es"><i class="fab fa-twitter" target="_blank"></i></a>
+				<a href="https://es-la.facebook.com/"><i class="fab fa-facebook" target="_blank"></i></a>
+				<a href="https://web.telegram.org/#/login"><i class="fab fa-telegram" target="_blank"></i></a>
+			</div>
+		</footer>
+	</body>
+</html>

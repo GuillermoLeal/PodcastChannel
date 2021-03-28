@@ -1,0 +1,317 @@
+%section-title {
+	font-family: $font-secundary;
+	font-size: $font-size-xl;
+	letter-spacing: 0;
+	line-height: 42px;
+	font-weight: normal;
+
+	@include media(md) {
+		font-size: $font-size-l;
+	}
+	@include media(sm) {
+		font-size: $font-size-m;
+	}
+}
+
+.button {
+	display: block;
+	box-sizing: border-box;
+	padding: 15px 50px;
+	font-size: $font-size-s;
+	background-color: $secundary;
+	width: max-content;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+	font-weight: bold;
+	color: $black;
+
+	@include media(md) {
+		padding: 15px 30px;
+	}
+	@include media(xs) {
+		width: 100%;
+	}
+
+	&:hover {
+		color: white;
+		background: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+	}
+}
+
+.p-medium {
+	max-width: 65%;
+
+	@include media(sm) {
+		max-width: 100%;
+	}
+}
+
+//* SECCIONES
+.section-title {
+	font-family: $font-secundary;
+	font-size: $font-size-l;
+	font-weight: 400;
+	line-height: 36px;
+	letter-spacing: 0px;
+
+	@include media(md) {
+		font-size: $font-size-m;
+	}
+}
+
+.section {
+	color: $black;
+	letter-spacing: 0;
+}
+
+.section-header {
+	padding: 15% 13% 2% 13%;
+
+	@include media(md) {
+		padding: 10% 10% 2% 10%;
+	}
+	@include media(sm) {
+		padding: 8% 10% 3% 10%;
+	}
+	@include media(xs) {
+		padding: 16px;
+	}
+
+	h1 {
+		@extend %section-title;
+
+		span {
+			@extend %section-title;
+		}
+
+		br {
+			display: none;
+
+			@include media(xs) {
+				display: inline;
+			}
+		}
+	}
+
+	img {
+		width: 100%;
+		position: relative;
+		margin-top: -135px;
+	}
+}
+
+.section-body {
+	padding: 0% 13% 5% 13%;
+
+	@include media(md) {
+		padding: 0% 10% 5% 10%;
+	}
+	@include media(xs) {
+		padding: 16px;
+	}
+
+	font-size: $font-size-xs;
+	font-weight: bold;
+	line-height: 22px;
+
+	p {
+		margin-bottom: 60px;
+
+		@include media(md) {
+			margin-bottom: 20px;
+		}
+	}
+}
+// *******************************
+
+//* Seccion Ladeada de fondo azul
+.section-shape {
+	background: $bg-gradient;
+	color: $white;
+
+	.section-header {
+		@include media(md) {
+			padding: 16% 10% 2% 10%;
+		}
+		@include media(sm) {
+			padding: 20% 5% 5% 5%;
+		}
+		@include media(xs) {
+			padding: 60px 35px 35px 35px;
+		}
+	}
+
+	.section-body {
+		padding: 0% 5% 13% 5%;
+
+		@include media(md) {
+			padding: 0% 5% 15% 5%;
+		}
+		@include media(sm) {
+			padding: 0 5% 20% 5%;
+		}
+	}
+}
+
+.shape-tb {
+	clip-path: polygon(0 13%, 100% 0%, 100% 87%, 0% 100%);
+
+	@include media(md) {
+		clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
+	}
+	@include media(sm) {
+		clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
+	}
+	@include media(xs) {
+		clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+	}
+}
+
+.shape-t {
+	clip-path: polygon(0 25%, 100% 0%, 100% 87%, 0% 100%);
+
+	@include media(md) {
+		clip-path: polygon(0 16%, 100% 0%, 100% 87%, 0% 100%);
+	}
+	@include media(sm) {
+		clip-path: polygon(0 23%, 100% 0%, 100% 100%, 0% 100%);
+	}
+	@include media(xs) {
+		clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+	}
+}
+// *******************************
+
+//* Seccion de donde venimos
+.section-flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0% 10%;
+
+	@include media(sm) {
+		flex-direction: column;
+	}
+	@include media(xs) {
+		padding: 0;
+	}
+
+	.section-header {
+		max-width: 450px;
+		display: flex;
+		align-items: center;
+		padding: 0;
+
+		@include media(md) {
+			max-width: 400px;
+		}
+
+		img {
+			width: 100%;
+
+			@include media(sm) {
+				display: none;
+			}
+			@include media(xs) {
+				display: block;
+			}
+		}
+	}
+
+	.section-body {
+		max-width: 440px;
+		padding: 0;
+
+		@include media(sm) {
+			max-width: 100%;
+			padding: 15% 10% 5% 10%;
+		}
+		@include media(xs) {
+			padding: 16px;
+		}
+	}
+}
+//**************************
+
+//* Spotify
+.spotify {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	@include media(sm) {
+		flex-direction: column;
+	}
+}
+
+iframe {
+	width: 42%;
+	border: 0;
+
+	margin-bottom: 45px;
+
+	@include media(md) {
+		margin-bottom: 25px;
+	}
+	@include media(sm) {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+// *********
+
+//* Imagenes de invitadas
+.grid-gallery {
+	margin-bottom: 0;
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr 1fr;
+
+	@include media(sm) {
+		margin-bottom: 50px;
+		grid-template: 1fr 1fr 1fr / 1fr 1fr;
+	}
+	@include media(xs) {
+		grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+// **********************
+
+//* Seccion de Temas
+.container-card-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+	@include media(sm) {
+		flex-direction: column;
+	}
+}
+
+.card-icon {
+	margin: 15px;
+	padding: 10px;
+	width: 20%;
+
+	@include media(md) {
+		width: 40%;
+	}
+	@include media(sm) {
+		width: auto;
+	}
+
+	p {
+		padding: 15px 0px;
+		line-height: 32px;
+		font-family: $font-secundary-bold;
+		font-size: $font-size-n;
+		letter-spacing: 0;
+	}
+}
+// ***************

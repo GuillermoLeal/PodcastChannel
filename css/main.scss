@@ -1,0 +1,21 @@
+// Abstracts
+@import "./abstracts/media-queries";
+@import "./abstracts/variables";
+@import "./abstracts/common";
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: $font-primary;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+//Layout
+@import "./layout/header";
+@import "./layout/content";
+@import "./layout/footer";

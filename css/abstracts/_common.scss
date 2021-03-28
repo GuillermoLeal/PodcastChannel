@@ -1,0 +1,48 @@
+.line-through {
+	text-decoration: line-through;
+}
+
+.color-blue {
+	color: $primary;
+
+	@include media(md) {
+		color: $black;
+	}
+}
+
+.text-visible {
+	display: inline-block;
+
+	@include media(sm) {
+		display: none;
+	}
+}
+
+.d-none {
+	display: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.mb {
+	margin-bottom: 30px;
+}
+
+// Flex Box
+.d-flex {
+	display: flex;
+}
+.flex-column {
+	flex-direction: column;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.align-center {
+	align-items: center;
+}
